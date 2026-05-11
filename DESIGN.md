@@ -84,11 +84,23 @@ The core challenge lies in identifying and exploiting services.
 - **Vulnerability Database:** The player maintains or finds a list of known vulnerabilities for specific versions.
 - **Exploitation:** The player must use the correct tool or command sequence that matches the target's service version.
 
-### 3.4. Hardware Progression
-Players earn money from missions to upgrade their rig:
-- **Modems:** 2400 baud -> 14.4k -> 56k -> DSL -> Fiber (affects command output speed and file transfer time).
-- **Storage:** Upgrading HDD to store more tools and stolen data.
-- **CPU:** Faster decryption or password cracking.
+### 3.4. Hardware & PC Building
+Players spend earned Credits at the "Hardware Shop" to build and upgrade their rig. The game features a full PC building mechanic with era-specific components and compatibility logic.
+
+**Core Components:**
+- **Motherboard:** Determines the number of "slots" available for other parts and the supported "Era" of CPUs.
+- **CPU (Processor):** Increases the speed of decryption and password-cracking tools.
+- **RAM (Memory):** Allows for multiple concurrent remote connections and faster execution of complex scanners.
+- **Storage (HDD/SSD):** Limits the number of tools and the amount of stolen data (exfiltrated files) the player can store.
+- **Networking (Modem/NIC):** Determines connection speed (`dial` speed) and exfiltration bandwidth.
+- **Cooling:** Prevents "Thermal Throttling" (sudden slowdowns) during intense computational tasks.
+- **PSU (Power Supply):** Required to support higher-tier, power-hungry components.
+
+**The `sysinfo` Command:**
+At any time, the player can run `sysinfo` to see a `neofetch`-style ASCII display of their current build, including component names, era compatibility, and performance stats.
+
+**Compatibility Logic:**
+Components are tagged by "Era" (e.g., *Copper*, *Silicon*, *Cloud*). A player cannot install a *Cloud-era* CPU into a *Copper-era* Motherboard, requiring strategic full-system overhauls as the acts progress.
 
 ## 4. Mission Structure
 Missions are delivered via a central hub that evolves over time.
