@@ -9,6 +9,7 @@ This plan outlines the implementation phases for the "Legacy Leak" hacking simul
     - Command history (arrow keys).
     - Tab-completion for files and commands.
     - Syntax highlighting for commands.
+    - **Theme System:** A modular styling system to swap color palettes (Green, Amber, etc.) globally.
 - **Virtual File System (VFS):**
     - Implement a class-based VFS that supports `ls`, `cd`, `cat`, `mkdir`, `rm`, and `pwd`.
     - Support for file permissions (read/write/execute).
