@@ -88,12 +88,27 @@ Missions are delivered via a central hub that evolves over time.
 - **Persistence:** The state of the player's filesystem and known hosts is saved.
 - **Challenge over Trace:** Difficulty comes from technical complexity and discovering the correct exploits.
 
-## 6. Economy & Reputation
-As a freelancer, the player earns **Credits** and **Reputation**.
-- **Credits:** Used to purchase hardware upgrades and "zero-day" exploits.
-- **Reputation:** Higher reputation unlocks higher-paying and more complex missions.
+## 6. Economy, Reputation & Leveling
+The player's progression is tracked via three core metrics:
+- **Credits:** Currency earned from all missions and boss targets. Used for hardware (Modems, CPUs, Storage) and Software (Exploits, Scanners).
+- **Reputation:** Earned by successfully completing missions and exfiltrating "Bonus" data. Reputation serves as the XP for the leveling system.
+- **Level (Rank):** As Reputation reaches certain thresholds, the player "Levels Up."
+    - **Unlocks:** Each level grants access to more prestigious mission boards, advanced exploit vendors, and act-specific hardware.
+    - **Titles:** Leveling grants Noir-inspired ranks (e.g., *Novice*, *Script-Diver*, *Ghost-Protocol*, *Digital-Shade*).
 
-## 7. Boss Targets
+## 7. Mission Systems
+
+### 7.1. Story Missions
+These are the fixed, 9-act narrative missions that drive the plot involving *Vapor* and *Aegis*. They offer high rewards and major story beats.
+
+### 7.2. Procedural Missions (The Grind)
+To earn extra credits and reputation, players can take on procedural "Contracts."
+- **Generation:** These missions are randomly generated based on the player's current Act and Level.
+- **Target Variety:** Difficulty varies. A "Low Stakes" mission might involve an old FTP server, while a "High Stakes" mission involves a hardened modern firewall.
+- **Objectives:** Include data theft, file deletion, or "system mapping" for a client.
+- **Replayability:** Players can grind these missions to afford high-end hardware before attempting the Act Boss.
+
+## 8. Boss Targets
 At the end of each act, the player must breach a "Boss Target." These are high-security systems that require the player to combine all the skills, tools, and hardware upgrades they have acquired during that act. Successful breaches reward significant **Credits**.
 
 ### Act I Boss: "The Central Office" (Telecomm Core)
@@ -132,7 +147,7 @@ At the end of each act, the player must breach a "Boss Target." These are high-s
 *   **Skill Test:** AI sentinel bypassing and quantum-ready exploit execution.
 *   **Challenge:** Defeat the "Sentinel" by varying your command patterns so the AI cannot predict your next move.
 
-## 8. Example Mission (1994)
+## 9. Example Mission (1994)
 1. **Objective:** Exfiltrate "SALARY_LIST.TXT" from a local accounting firm's BBS.
 2. **Step 1:** Dial the firm's number: `dial 555-0123`.
 3. **Step 2:** Explore the file system: `ls`, `cd /private`.

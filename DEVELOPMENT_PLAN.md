@@ -29,10 +29,14 @@ This plan outlines the implementation phases for the "Legacy Leak" hacking simul
 - **Execution Logic:** Tools must be run while connected to a target; they check if the target's service version matches their payload.
 
 ## Phase 4: Mission & Progression System
-**Goal:** Implement the "Freelancer" lifecycle.
+**Goal:** Implement the "Freelancer" lifecycle and leveling.
 - **BBS/Hub:** A central hub for mission briefings and payouts.
 - **Economy:** Tracking `Credits` and `Reputation`.
-- **Hardware Shop:** A menu/command to purchase faster modems (reducing "lag" in the terminal) and more storage.
+- **Leveling Logic:** Implement the Reputation-to-Level formula and the unlock system for tools/hardware.
+- **Procedural Generator:**
+    - Create a system to generate random IPs/Phone numbers.
+    - Assign random service versions and "data treasures" to generated hosts based on the current Act.
+- **Hardware Shop:** A menu/command to purchase faster modems and more storage.
 - **Save System:** JSON-based persistence of the player's VFS, stats, and completed missions.
 
 ## Phase 5: Act I-III - The Early Era (1990-2000)
