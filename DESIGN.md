@@ -6,6 +6,15 @@
 ## 2. Core Narrative: The "Ghost in the Machine" Journey
 The player takes on the role of a nameless freelancer operating from the shadows. The tone is **Gritty Noir**: cold, paranoid, and focused on the cost of digital secrets. The narrative spans three decades of evolving technology and shifting ethics across nine distinct acts.
 
+### Prologue: The First Breach (1989) - "The Acoustic Coupler"
+*   **Setting:** A cramped bedroom in 1989. You have just inherited an old terminal and an acoustic coupler modem.
+*   **Tutorial Focus:**
+    *   **Movement:** Using `ls` and `cd` to explore your local machine.
+    *   **Interaction:** Using `cat` to read a mysterious "read_me.txt" left by a previous owner.
+    *   **Networking:** Using the `dial` command for the first time to connect to a "neighborhood BBS."
+    *   **Exploitation:** Following a step-by-step guide from *Vapor* to bypass a simple password prompt using a "default" credential found in a text file.
+*   **Outcome:** You successfully "log in" to your first remote system and receive a message from *Vapor*: "The world is bigger than your bedroom. Don't get caught."
+
 ### Act I: The Copper Age (1990-1993) - "The Dial-Up Shadows"
 *   **Atmosphere:** CRT flicker, acoustic couplers, and the smell of ozone.
 *   **Key Milestone:** Bypassing phone company toll systems (blue-boxing) to reach remote BBSs without a trace.
