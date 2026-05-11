@@ -29,29 +29,33 @@ This plan outlines the implementation phases for the "Legacy Leak" hacking simul
 - **Execution Logic:** Tools must be run while connected to a target; they check if the target's service version matches their payload.
 
 ## Phase 4: Mission & Progression System
-**Goal:** Implement the "Freelancer" lifecycle.
+**Goal:** Implement the "Freelancer" lifecycle and leveling.
 - **BBS/Hub:** A central hub for mission briefings and payouts.
 - **Economy:** Tracking `Credits` and `Reputation`.
-- **Hardware Shop:** A menu/command to purchase faster modems (reducing "lag" in the terminal) and more storage.
+- **Leveling Logic:** Implement the Reputation-to-Level formula and the unlock system for tools/hardware.
+- **Procedural Generator:**
+    - Create a system to generate random IPs/Phone numbers.
+    - Assign random service versions and "data treasures" to generated hosts based on the current Act.
+- **Hardware Shop:** A menu/command to purchase faster modems and more storage.
 - **Save System:** JSON-based persistence of the player's VFS, stats, and completed missions.
 
 ## Phase 5: Act I-III - The Early Era (1990-2000)
 **Goal:** Establish the foundation of phone phreaking and early web hacking.
-- **Act I:** "Dial-up" atmosphere, BBS interfaces, and `dial` command.
-- **Act II:** Transition to HTTP/Gopher services and early browser-based exploits.
-- **Act III:** Y2K mission set and legacy bank systems.
+- **Act I:** "Dial-up" atmosphere, BBS interfaces, and `dial` command. *Boss: Telecomm Core.*
+- **Act II:** Transition to HTTP/Gopher services and early browser-based exploits. *Boss: Early ISP.*
+- **Act III:** Y2K mission set and legacy bank systems. *Boss: The Y2K Vault.*
 
 ## Phase 6: Act IV-VI - The Expansion Era (2001-2013)
 **Goal:** Transition to high-speed networking and social-technical hacking.
-- **Act IV:** Implement Broadband (DSL/Fiber) logic (eliminating text-render lag) and early WiFi/SSH mechanics.
-- **Act V:** Social engineering "clue" system (searching user profiles for password hints).
-- **Act VI:** Hacktivism missions, multi-vector attack logic (DDoS vs. Data Breach), and IRC-based hub.
+- **Act IV:** Implement Broadband logic and WiFi/SSH mechanics. *Boss: Corporate Backbone.*
+- **Act V:** Social engineering "clue" system. *Boss: Social Profile Engine.*
+- **Act VI:** Hacktivism missions, multi-vector attack logic, and IRC-based hub. *Boss: Aegis Command Center.*
 
 ## Phase 7: Act VII-IX - The Modern & Future Era (2014-Present)
 **Goal:** Advanced infrastructure and AI-driven defense.
-- **Act VII:** Cloud-specific mechanics (S3 bucket "misconfigurations," virtualized containers).
-- **Act VIII:** Ransomware mechanics (file encryption/decryption tasks) and Dark Web mission boards.
-- **Act IX:** AI "Sentinel" implementation (a service that monitors command history and locks down after repeated suspicious patterns).
+- **Act VII:** Cloud-specific mechanics (S3/Containers). *Boss: S3 Monolith.*
+- **Act VIII:** Ransomware mechanics and Dark Web mission boards. *Boss: Encryption Hive.*
+- **Act IX:** AI "Sentinel" implementation. *Boss: Aegis Prime (AI Core).*
 
 ## Phase 8: Polish & Content Expansion
 **Goal:** Finalize the narrative arc and user experience.
