@@ -39,8 +39,9 @@ This plan outlines the implementation phases for the "Legacy Leak" hacking simul
 - **Hardware Shop:** A menu/command to purchase faster modems and more storage.
 - **Save System:** JSON-based persistence of the player's VFS, stats, and completed missions.
 
-## Phase 5: Act I-III - The Early Era (1990-2000)
+## Phase 5: Prologue & Act I-III - The Early Era (1989-2000)
 **Goal:** Establish the foundation of phone phreaking and early web hacking.
+- **Prologue (Tutorial):** Controlled tutorial environment introducing `ls`, `cd`, `cat`, and `dial`.
 - **Act I:** "Dial-up" atmosphere, BBS interfaces, and `dial` command. *Boss: Telecomm Core.*
 - **Act II:** Transition to HTTP/Gopher services and early browser-based exploits. *Boss: Early ISP.*
 - **Act III:** Y2K mission set and legacy bank systems. *Boss: The Y2K Vault.*
