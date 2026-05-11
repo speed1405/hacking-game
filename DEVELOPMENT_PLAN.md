@@ -37,7 +37,10 @@ This plan outlines the implementation phases for the "Legacy Leak" hacking simul
 - **Procedural Generator:**
     - Create a system to generate random IPs/Phone numbers.
     - Assign random service versions and "data treasures" to generated hosts based on the current Act.
-- **Hardware Shop:** A menu/command to purchase faster modems and more storage.
+- **Hardware Shop:**
+    - Implement a multi-component shop (Motherboard, CPU, RAM, etc.).
+    - Implement era-based compatibility logic (e.g., matching CPU socket types to Motherboards).
+- **System Information:** Build the `sysinfo` command with a neofetch-inspired ASCII layout.
 - **Save System:** JSON-based persistence of the player's VFS, stats, and completed missions.
 
 ## Phase 5: Prologue & Act I-III - The Early Era (1989-2000)
