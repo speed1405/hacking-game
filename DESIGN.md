@@ -129,8 +129,25 @@ The player's progression is tracked via three core metrics:
 
 ## 7. Mission Systems
 
-### 7.1. Story Missions
-These are the fixed, 9-act narrative missions that drive the plot involving *Vapor* and *Aegis*. They offer high rewards and major story beats.
+### 7.1. Story Missions & Act Gating
+Story missions drive the core plot. To maintain the "gritty noir" progression, Acts are gated by a combination of **Player Level** and **Narrative Triggers**.
+
+| Act | Min Level | Gatekeeper | Primary Unlock |
+| :--- | :--- | :--- | :--- |
+| **Prologue** | 0 | Internal Drive | Local Terminal Access |
+| **Act I** | 1 | *Vapor* | BBS Dialing (`dial`) |
+| **Act II** | 4 | The Node | HTTP/Gopher Tools |
+| **Act III** | 8 | The Node | Y2K Exploit Kit |
+| **Act IV** | 12 | *Vapor* | Broadband/SSH Tools |
+| **Act V** | 16 | IRC Underground | Social Engineering Suite |
+| **Act VI** | 20 | IRC Underground | Botnet Controller |
+| **Act VII** | 24 | *Vapor* | Cloud/Container Toolkit |
+| **Act VIII** | 28 | Dark Web Board | Ransomware Decryptors |
+| **Act IX** | 32 | *Vapor's* Ghost | AI Evasion Suite |
+
+**Gating Logic:**
+- **The Rank Gate:** The mission boards (BBS, IRC, Dark Web) will simply not list the next Act's story missions until the player reaches the required Level (derived from Reputation).
+- **The Narrative Gate:** Even if the Level is met, certain acts require a direct contact from *Vapor* or another handler to proceed, ensuring the player feels like they are being "watched" and "guided" through the shadows.
 
 ### 7.2. Procedural Missions (The Grind)
 To earn extra credits and reputation, players can take on procedural "Contracts."

@@ -34,7 +34,9 @@ This plan outlines the implementation phases for the "Legacy Leak" hacking simul
 **Goal:** Implement the "Freelancer" lifecycle and leveling.
 - **BBS/Hub:** Central hub for briefings, payouts, and the Hardware Shop.
 - **Procedural Generator:** A system to generate random targets and missions based on the current Act.
-- **Economy & Leveling:** Tracking Credits, Reputation, and Level-up triggers.
+- **Economy & Leveling:**
+    - Tracking Credits, Reputation, and Level-up triggers.
+    - **Act Gating:** Implement logic to lock/unlock story acts based on Level and narrative flags.
 - **Save System:** JSON-based persistence using **nlohmann/json**.
 
 ## Phase 5: Prologue & Acts I-III (1989-2000)
