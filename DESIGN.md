@@ -4,31 +4,52 @@
 "Legacy Leak" is a single-player, CLI-based hacking simulator that follows the career of a freelance hacker from the early 1990s through the modern era. The game focuses on technical accuracy, logic-based challenges, and the evolution of technology. Players progress by completing missions, upgrading their hardware, and learning to exploit various versions of networked services.
 
 ## 2. Core Narrative: The "Ghost in the Machine" Journey
-The player takes on the role of a nameless freelancer operating from the shadows. The tone is **Gritty Noir**: cold, paranoid, and focused on the cost of digital secrets. The narrative spans three decades of evolving technology and shifting ethics.
+The player takes on the role of a nameless freelancer operating from the shadows. The tone is **Gritty Noir**: cold, paranoid, and focused on the cost of digital secrets. The narrative spans three decades of evolving technology and shifting ethics across nine distinct acts.
 
-### Act I: The Copper Age (1990-1999)
-*Atmosphere: Dark rooms, the glow of CRT monitors, the screech of 2400-baud modems.*
-* **Setting:** Early internet "wild west." Most connections are via phone lines.
-* **Key Milestone: "The Great Phreak":** The player must navigate the phone system to bypass long-distance charges and reach a high-security BBS.
-* **The "Job":** You are hired to retrieve evidence of corporate embezzlement from a local bank's private BBS.
-* **Historical Event:** The transition from simple password guessing to "buffer overflow" exploits.
-* **Ending:** A mentor-figure (alias: *Vapor*) goes silent after a federal raid, leaving you with an encrypted file you can't yet open.
+### Act I: The Copper Age (1990-1993) - "The Dial-Up Shadows"
+*   **Atmosphere:** CRT flicker, acoustic couplers, and the smell of ozone.
+*   **Key Milestone:** Bypassing phone company toll systems (blue-boxing) to reach remote BBSs without a trace.
+*   **Plot:** You meet your mentor, *Vapor*, who teaches you that "information wants to be free, but access has a price."
 
-### Act II: The Silicon Boom (2000-2009)
-*Atmosphere: Noisy server rooms, the rise of "The Matrix" aesthetic, the transition from dial-up to DSL.*
-* **Setting:** The internet is everywhere, but it's fragile. The shift from unencrypted Telnet to SSH begins.
-* **Key Milestone: "The Dotcom Crash":** Navigating a bankrupt tech giant's defunct servers to recover "lost" intellectual property.
-* **The "Job":** Infiltration of a major ISP to plant a backdoor for a mysterious client. You begin to see *Vapor's* signature in the ISP's core code.
-* **Historical Event:** The rise of SQL injection and early worm outbreaks.
-* **Ending:** You realize the file from Act I is part of a larger global surveillance backbone being built by a conglomerate called *Aegis*.
+### Act II: The Superhighway (1994-1996) - "The Mosaic Breach"
+*   **Atmosphere:** The excitement and chaos of the first web browsers.
+*   **Key Milestone:** Exploit the transition from private BBSs to the public "World Wide Web" via early Gopher and HTTP vulnerabilities.
+*   **Plot:** *Vapor* warns you about a group called *Aegis* that is quietly buying up the infrastructure of the new web.
 
-### Act III: The Cloud Era (2010-Present)
-*Atmosphere: Sleek interfaces, clinical white-space, the silent efficiency of data centers.*
-* **Setting:** Everything is interconnected. Encryption is standard. Containers and cloud instances make targets feel ethereal.
-* **Key Milestone: "The Dark Web Transition":** Moving operations from IRC to TOR-based onion boards.
-* **The "Job":** Breaching a "Zero-Trust" cloud environment to delete the data *Aegis* has been collecting on you for 20 years.
-* **Historical Event:** The discovery of massive processor-level vulnerabilities (like Meltdown/Spectre) and the rise of state-sponsored cyberwarfare.
-* **Ending:** A final choice—release the truth about *Aegis* (and end your career) or become the new silent architect of their digital panopticon.
+### Act III: The Gold Rush (1997-2000) - "The Y2K Panic"
+*   **Atmosphere:** Glowing server racks and the ticking clock of the millennium.
+*   **Key Milestone:** Exploiting legacy code in banking systems as they scramble to patch for Y2K.
+*   **Plot:** You discover that *Aegis* has intentionally left "logic bombs" in key infrastructure. *Vapor* disappears during a federal raid on the "LOD" (Legion of Doom).
+
+### Act IV: The Broadband Shift (2001-2004) - "The Always-On Threat"
+*   **Atmosphere:** The hum of DSL modems and the sudden silence of unencrypted Telnet being replaced by SSH.
+*   **Key Milestone:** The first major WiFi (WEP) cracks and the rise of persistent connections allowing for longer, more complex breaches.
+*   **Plot:** You receive an encrypted package from the missing *Vapor*. It contains a key to an *Aegis* vault that you cannot yet reach.
+
+### Act V: The Social Web (2005-2008) - "The Human Exploit"
+*   **Atmosphere:** The "glossy" look of Web 2.0 and the rise of social engineering.
+*   **Key Milestone:** Using early social media (MySpace/early Facebook) to gather "clues" for password cracking and credential stuffing.
+*   **Plot:** You find *Vapor's* signature inside an *Aegis* subsidiary. You realize they haven't just bought the web; they are building a profile on every user.
+
+### Act VI: The Hacktivist Rise (2009-2013) - "The Lulz Era"
+*   **Atmosphere:** Glitch art, IRC chat rooms, and the chaotic energy of decentralized groups.
+*   **Key Milestone:** Coordinating "multi-vector" attacks (DDoS as a distraction for a data breach) against high-profile political targets.
+*   **Plot:** You are recruited by a hacktivist group to expose *Aegis*. You have to decide if you're a mercenary or a revolutionary.
+
+### Act VII: The Cloud Migration (2014-2017) - "The Invisible Fortress"
+*   **Atmosphere:** Clinical white-space, AWS dashboards, and the "Snowden" paranoia.
+*   **Key Milestone:** Infiltrating virtualized containers and exploiting misconfigured "S3 Buckets" to exfiltrate massive datasets.
+*   **Plot:** You find evidence that *Aegis* is the primary contractor for a global, silent surveillance program. *Vapor* is rumored to be their lead architect—either a prisoner or a traitor.
+
+### Act VIII: The Ransomware Pandemic (2018-2021) - "The Extortion Cycle"
+*   **Atmosphere:** Red warning screens, crypto-wallet addresses, and the dark web economy.
+*   **Key Milestone:** Deploying and managing complex ransomware chains to force *Aegis* to reveal their "Master Key."
+*   **Plot:** You finally breach an *Aegis* deep-storage site. You find *Vapor*, or what’s left of them: a digital consciousness uploaded to the network.
+
+### Act IX: The Zero-Trust Era (2022-Present) - "The AI Panopticon"
+*   **Atmosphere:** Minimalist terminals, AI-driven security alerts, and quantum-ready encryption.
+*   **Key Milestone:** Bypassing AI-security "sentinels" that learn from your command history in real-time.
+*   **Plot:** The final confrontation. You must use everything you've learned over 30 years to either dismantle *Aegis* from the root or take control of the panopticon yourself.
 
 ## 3. Gameplay Mechanics
 
@@ -39,7 +60,7 @@ The game is played entirely through a simulated terminal.
 - **Output:** Text-based, with ASCII art used for headers, BBS interfaces, and system logs.
 
 ### 3.2. Networking & Connection
-- **Dial-up (90s):** Requires "dialing" a phone number via a `dial` command. Characterized by slow text rendering and distinct modem sounds (simulated via text/visuals).
+- **Dial-up (90s):** Requires "dialing" a phone number via a `dial` command. Characterized by slow text rendering and distinct modem sounds.
 - **IP/SSH (Modern):** Transition to using `ssh [user]@[ip]` for connections.
 - **Network Mapping:** Use of tools like `nmap` or `finger` to discover services and their versions.
 
@@ -47,7 +68,7 @@ The game is played entirely through a simulated terminal.
 The core challenge lies in identifying and exploiting services.
 - **Discovery:** Running a scan on a target reveals services (e.g., `FTP 2.1.3`, `OpenSSH 4.2p1`).
 - **Vulnerability Database:** The player maintains or finds a list of known vulnerabilities for specific versions.
-- **Exploitation:** The player must use the correct tool or command sequence that matches the target's service version. Newer versions may require different approaches or the discovery of specific configuration flaws.
+- **Exploitation:** The player must use the correct tool or command sequence that matches the target's service version.
 
 ### 3.4. Hardware Progression
 Players earn money from missions to upgrade their rig:
@@ -61,21 +82,16 @@ Missions are delivered via a central hub that evolves over time.
 2. **2000s:** Encrypted IRC channels or early web forums.
 3. **Modern:** Dark web onion sites or encrypted messaging apps.
 
-**Mission Types:**
-- **Exfiltration:** Find and download a specific file (e.g., `blueprints.pdf`, `passwords.txt`).
-- **Sabotage:** Delete specific system files or shut down a service.
-- **Infiltration:** Plant a "backdoor" for a later mission.
-
 ## 5. Technical Design Goals
-- **Accuracy:** Commands should behave as they do in a real Linux environment (e.g., `ls -la` shows hidden files).
-- **No Scripting (Phase 1):** Gameplay is focused on manual command entry and tactical decision-making.
+- **Accuracy:** Commands should behave as they do in a real Linux environment.
+- **No Scripting (Phase 1):** Gameplay is focused on manual command entry.
 - **Persistence:** The state of the player's filesystem and known hosts is saved.
-- **Challenge over Trace:** There is no "trace" or "timer" mechanic. The difficulty comes from the complexity of the systems, the need for technical accuracy, and discovering the correct exploits for specific service versions.
+- **Challenge over Trace:** Difficulty comes from technical complexity and discovering the correct exploits.
 
 ## 6. Economy & Reputation
 As a freelancer, the player earns **Credits** and **Reputation**.
-- **Credits:** Used to purchase hardware upgrades (Modems, CPUs, Storage) and "zero-day" exploits from the black market.
-- **Reputation:** Higher reputation unlocks higher-paying and more complex missions from more exclusive underground boards.
+- **Credits:** Used to purchase hardware upgrades and "zero-day" exploits.
+- **Reputation:** Higher reputation unlocks higher-paying and more complex missions.
 
 ## 7. Example Mission (1994)
 1. **Objective:** Exfiltrate "SALARY_LIST.TXT" from a local accounting firm's BBS.
