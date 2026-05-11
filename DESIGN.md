@@ -67,6 +67,11 @@ The game is played entirely through a simulated terminal.
 - **Commands:** Must be POSIX-compliant (e.g., `ls`, `cd`, `cat`, `rm`, `mkdir`, `grep`, `ssh`, `ftp`, `telnet`).
 - **Simulated OS:** A hierarchical file system for the player's own machine and any remote machines they access.
 - **Output:** Text-based, with ASCII art used for headers, BBS interfaces, and system logs.
+- **Theme Selector:** Players can customize their experience using the `theme` command.
+    - **Classic Green:** The iconic "Matrix" look (Green on Black).
+    - **Retro Amber:** The classic 80s/90s monochrome look (Amber on Black).
+    - **High Contrast:** Crisp white text for maximum readability (White on Black).
+    - **Phosphor Blue:** A cool, modern digital aesthetic (Cyan on Black).
 
 ### 3.2. Networking & Connection
 - **Dial-up (90s):** Requires "dialing" a phone number via a `dial` command. Characterized by slow text rendering and distinct modem sounds.
