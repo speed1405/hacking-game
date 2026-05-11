@@ -3,11 +3,32 @@
 ## 1. Game Overview
 "Legacy Leak" is a single-player, CLI-based hacking simulator that follows the career of a freelance hacker from the early 1990s through the modern era. The game focuses on technical accuracy, logic-based challenges, and the evolution of technology. Players progress by completing missions, upgrading their hardware, and learning to exploit various versions of networked services.
 
-## 2. Core Narrative
-The player starts as a hobbyist in the early 90s, armed with a basic computer and a dial-up modem.
-- **Act I: The BBS Era (1990-1999):** Phone phreaking, Bulletin Board Systems (BBS), telnet, and early exploits. Focus on manual discovery and social engineering clues.
-- **Act II: The Dotcom & Cyberwar Era (2000-2010):** The rise of the web, SSH replacing Telnet, early WiFi hacking, and the professionalization of freelance hacking.
-- **Act III: The Modern Era (2011-Present):** Advanced encryption, cloud infrastructure, and sophisticated vulnerability management.
+## 2. Core Narrative: The "Ghost in the Machine" Journey
+The player takes on the role of a nameless freelancer operating from the shadows. The tone is **Gritty Noir**: cold, paranoid, and focused on the cost of digital secrets. The narrative spans three decades of evolving technology and shifting ethics.
+
+### Act I: The Copper Age (1990-1999)
+*Atmosphere: Dark rooms, the glow of CRT monitors, the screech of 2400-baud modems.*
+* **Setting:** Early internet "wild west." Most connections are via phone lines.
+* **Key Milestone: "The Great Phreak":** The player must navigate the phone system to bypass long-distance charges and reach a high-security BBS.
+* **The "Job":** You are hired to retrieve evidence of corporate embezzlement from a local bank's private BBS.
+* **Historical Event:** The transition from simple password guessing to "buffer overflow" exploits.
+* **Ending:** A mentor-figure (alias: *Vapor*) goes silent after a federal raid, leaving you with an encrypted file you can't yet open.
+
+### Act II: The Silicon Boom (2000-2009)
+*Atmosphere: Noisy server rooms, the rise of "The Matrix" aesthetic, the transition from dial-up to DSL.*
+* **Setting:** The internet is everywhere, but it's fragile. The shift from unencrypted Telnet to SSH begins.
+* **Key Milestone: "The Dotcom Crash":** Navigating a bankrupt tech giant's defunct servers to recover "lost" intellectual property.
+* **The "Job":** Infiltration of a major ISP to plant a backdoor for a mysterious client. You begin to see *Vapor's* signature in the ISP's core code.
+* **Historical Event:** The rise of SQL injection and early worm outbreaks.
+* **Ending:** You realize the file from Act I is part of a larger global surveillance backbone being built by a conglomerate called *Aegis*.
+
+### Act III: The Cloud Era (2010-Present)
+*Atmosphere: Sleek interfaces, clinical white-space, the silent efficiency of data centers.*
+* **Setting:** Everything is interconnected. Encryption is standard. Containers and cloud instances make targets feel ethereal.
+* **Key Milestone: "The Dark Web Transition":** Moving operations from IRC to TOR-based onion boards.
+* **The "Job":** Breaching a "Zero-Trust" cloud environment to delete the data *Aegis* has been collecting on you for 20 years.
+* **Historical Event:** The discovery of massive processor-level vulnerabilities (like Meltdown/Spectre) and the rise of state-sponsored cyberwarfare.
+* **Ending:** A final choice—release the truth about *Aegis* (and end your career) or become the new silent architect of their digital panopticon.
 
 ## 3. Gameplay Mechanics
 
