@@ -28,6 +28,8 @@ set(SOURCES
     src/Network.cpp
     src/Hardware.cpp
     src/Missions.cpp
+    src/Exploits.cpp
+    src/SaveSystem.cpp
     main.cpp
 )
 

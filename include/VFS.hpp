@@ -20,6 +20,7 @@ struct VFSNode {
     NodeType type;
     std::string content; // For files
     std::map<std::string, std::shared_ptr<VFSNode>> children; // For directories
+    std::weak_ptr<VFSNode> parent;
     std::string owner = "user";
     std::string group = "user";
     Permissions perms;

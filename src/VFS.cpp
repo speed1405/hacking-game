@@ -28,10 +28,12 @@ std::shared_ptr<VFSNode> FileSystem::get_node(const std::string& path) {
 
     for (const auto& token : tokens) {
         if (token == "..") {
-            // This would require parent pointers in VFSNode or tracking path in FS
-            // For now, let's just stay at current if we can't go up
+            if (auto p = current->parent.lock()) {
+                current = p;
+            }
             continue;
         }
+        if (token == ".") continue;
         if (current->children.count(token)) {
             current = current->children[token];
         } else {
@@ -61,6 +63,7 @@ bool FileSystem::touch(const std::string& path, const std::string& content) {
 
     auto new_file = std::make_shared<VFSNode>(file_name, NodeType::File);
     new_file->content = content;
+    new_file->parent = parent;
     parent->children[file_name] = new_file;
     return true;
 }
@@ -86,8 +89,26 @@ bool FileSystem::mkdir(const std::string& path) {
     if (parent->children.count(dir_name)) return false;
 
     auto new_dir = std::make_shared<VFSNode>(dir_name, NodeType::Directory);
+    new_dir->parent = parent;
     parent->children[dir_name] = new_dir;
     return true;
+}
+
+std::string FileSystem::pwd() const {
+    if (current_dir == root) return "/";
+
+    std::vector<std::string> components;
+    auto cur = current_dir;
+    while (cur && cur != root) {
+        components.push_back(cur->name);
+        cur = cur->parent.lock();
+    }
+
+    std::string result = "";
+    for (auto it = components.rbegin(); it != components.rend(); ++it) {
+        result += "/" + *it;
+    }
+    return result.empty() ? "/" : result;
 }
 
 bool FileSystem::cd(const std::string& path) {
