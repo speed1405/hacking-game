@@ -63,15 +63,19 @@ The player takes on the role of a nameless freelancer operating from the shadows
 ## 3. Gameplay Mechanics
 
 ### 3.1. The Terminal Interface
-The game is played entirely through a simulated terminal.
-- **Commands:** Must be POSIX-compliant (e.g., `ls`, `cd`, `cat`, `rm`, `mkdir`, `grep`, `ssh`, `ftp`, `telnet`).
-- **Simulated OS:** A hierarchical file system for the player's own machine and any remote machines they access.
-- **Output:** Text-based, with ASCII art used for headers, BBS interfaces, and system logs.
-- **Theme Selector:** Players can customize their experience using the `theme` command.
-    - **Classic Green:** The iconic "Matrix" look (Green on Black).
-    - **Retro Amber:** The classic 80s/90s monochrome look (Amber on Black).
-    - **High Contrast:** Crisp white text for maximum readability (White on Black).
-    - **Phosphor Blue:** A cool, modern digital aesthetic (Cyan on Black).
+The game is played entirely through a simulated terminal designed for maximum technical depth.
+- **Commands:** POSIX-compliant set including `ls`, `cd`, `cat`, `rm`, `mkdir`, `grep`, `ssh`, `ftp`, `telnet`, `ps`, `kill`, `top`, `sudo`, `chown`, and `chmod`.
+- **Advanced Shell Features:**
+    - **Piping (`|`):** Chain commands together (e.g., `cat secrets.txt | grep "password"`).
+    - **Redirection (`>`, `>>`):** Save command output to files or append data.
+    - **Environment Variables:** Support for `$HOME`, `$USER`, and custom variables.
+    - **Manual Pages (`man`):** In-game documentation for every tool and service.
+- **Refined Filesystem:**
+    - **Permissions:** Full `rwx` (read, write, execute) logic for Owners, Groups, and Others.
+    - **Timestamps:** Files track creation and modification times (vital for Act III Y2K missions).
+    - **System Logs:** Targets maintain logs in `/var/log` (e.g., `auth.log`, `syslog`) that can be read or cleared.
+- **Process Management:** A live process table allows players to see running services and background tasks using `ps` and manage them with `kill`.
+- **Theme Selector:** Customization via the `theme` command (Matrix Green, Retro Amber, High Contrast, Phosphor Blue).
 
 ### 3.2. Networking & Connection
 - **Dial-up (90s):** Requires "dialing" a phone number via a `dial` command. Characterized by slow text rendering and distinct modem sounds.

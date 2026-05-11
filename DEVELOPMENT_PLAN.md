@@ -6,13 +6,15 @@ This plan outlines the implementation phases for the "Legacy Leak" hacking simul
 **Goal:** Build a robust terminal emulator using modern C++.
 - **Terminal Framework:** Utilize **FTXUI** for:
     - Interactive Terminal UI with a "real" feel.
-    - Custom prompt and command history.
-    - Tab-completion support.
-    - Responsive layout for different terminal sizes.
+    - **Shell Parser:** Implement advanced parsing for piping (`|`), redirection (`>`, `>>`), and environment variables.
+    - Custom prompt, command history, and tab-completion.
 - **Virtual File System (VFS):**
-    - Implement a hierarchical VFS using smart pointers and the C++ standard library.
-    - Support for `ls`, `cd`, `cat`, `mkdir`, `rm`, and file permissions.
-    - Persistence via local filesystem mapping.
+    - Implement a hierarchical VFS with full POSIX permission logic (rwx).
+    - Support for `ls`, `cd`, `cat`, `mkdir`, `rm`, `chown`, `chmod`.
+    - **Logging System:** Automatic generation of system logs in `/var/log` for every host.
+- **Process Manager:**
+    - A centralized manager to track "running" services and player-spawned background tasks.
+    - Support for `ps`, `kill`, and a simplified `top`.
 
 ## Phase 2: Networking & Remote Access
 **Goal:** Implement the "Dial-up" and "Broadband" networking layers.
