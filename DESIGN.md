@@ -109,9 +109,10 @@ Missions are delivered via a central hub that evolves over time.
 3. **Modern:** Dark web onion sites or encrypted messaging apps.
 
 ## 5. Technical Design Goals
+- **Performance & Stability:** Written in **C++20** for a high-performance, low-latency terminal experience.
 - **Accuracy:** Commands should behave as they do in a real Linux environment.
-- **No Scripting (Phase 1):** Gameplay is focused on manual command entry.
-- **Persistence:** The state of the player's filesystem and known hosts is saved.
+- **No Scripting (Phase 1):** Gameplay is focused on manual command entry and tactical decision-making.
+- **Persistence:** The state of the player's filesystem and known hosts is saved using a JSON database.
 - **Challenge over Trace:** Difficulty comes from technical complexity and discovering the correct exploits.
 
 ## 6. Economy, Reputation & Leveling
