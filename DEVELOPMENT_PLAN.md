@@ -35,11 +35,29 @@ This plan outlines the implementation phases for the "Legacy Leak" hacking simul
 - **Hardware Shop:** A menu/command to purchase faster modems (reducing "lag" in the terminal) and more storage.
 - **Save System:** JSON-based persistence of the player's VFS, stats, and completed missions.
 
-## Phase 5: Act I - The 90s (Vertical Slice)
-**Goal:** A playable 15-minute experience.
-- Implement the first 3 missions using the BBS interface.
-- Provide 90s-era tools and targets.
-- Finalize the "Dial-up" atmosphere.
+## Phase 5: Act I-III - The Early Era (1990-2000)
+**Goal:** Establish the foundation of phone phreaking and early web hacking.
+- **Act I:** "Dial-up" atmosphere, BBS interfaces, and `dial` command.
+- **Act II:** Transition to HTTP/Gopher services and early browser-based exploits.
+- **Act III:** Y2K mission set and legacy bank systems.
+
+## Phase 6: Act IV-VI - The Expansion Era (2001-2013)
+**Goal:** Transition to high-speed networking and social-technical hacking.
+- **Act IV:** Implement Broadband (DSL/Fiber) logic (eliminating text-render lag) and early WiFi/SSH mechanics.
+- **Act V:** Social engineering "clue" system (searching user profiles for password hints).
+- **Act VI:** Hacktivism missions, multi-vector attack logic (DDoS vs. Data Breach), and IRC-based hub.
+
+## Phase 7: Act VII-IX - The Modern & Future Era (2014-Present)
+**Goal:** Advanced infrastructure and AI-driven defense.
+- **Act VII:** Cloud-specific mechanics (S3 bucket "misconfigurations," virtualized containers).
+- **Act VIII:** Ransomware mechanics (file encryption/decryption tasks) and Dark Web mission boards.
+- **Act IX:** AI "Sentinel" implementation (a service that monitors command history and locks down after repeated suspicious patterns).
+
+## Phase 8: Polish & Content Expansion
+**Goal:** Finalize the narrative arc and user experience.
+- Implement the "Vapor" digital consciousness interaction.
+- Final choice branching logic and multiple endings.
+- Comprehensive sound design (modem screeches, server hums) via visual/textual feedback.
 
 ## Technical Stack
 - **Language:** Python 3.10+
