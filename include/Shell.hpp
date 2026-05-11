@@ -6,6 +6,7 @@
 #include "Network.hpp"
 #include "Hardware.hpp"
 #include "Missions.hpp"
+#include "Exploits.hpp"
 
 namespace shell {
 
@@ -14,7 +15,8 @@ public:
     Shell(std::shared_ptr<vfs::FileSystem> fs,
           std::shared_ptr<network::Network> net,
           std::shared_ptr<hardware::PC> pc,
-          std::shared_ptr<missions::MissionManager> mm);
+          std::shared_ptr<missions::MissionManager> mm,
+          std::shared_ptr<exploits::ToolManager> tm);
     std::string execute(const std::string& input);
     std::string get_prompt() const;
 
@@ -23,6 +25,7 @@ private:
     std::shared_ptr<network::Network> net;
     std::shared_ptr<hardware::PC> pc;
     std::shared_ptr<missions::MissionManager> mm;
+    std::shared_ptr<exploits::ToolManager> tm;
     std::shared_ptr<network::Host> connected_host;
 
     int credits = 0;
